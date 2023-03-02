@@ -6,8 +6,29 @@
 - Dichiariamo chi ha vinto.
 */
 
-const pariDispari = prompt('Pari o dispari');
+const sceltaUtente = prompt('Pari o dispari');
+console.log(sceltaUtente);
 
 const numeroUtente = parseInt (prompt('Inserisci un numero da 1 a 5'));
-console.log(numeroUtente)
+console.log('Numero Utente: ' + numeroUtente)
+
+const numeroMin = 1;
+const numeroMax = 5;
+
+
+function numeroComputer(numeroMin, numeroMax){
+    let numeroComputer = Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
+    console.log( 'Numero Computer: ' + numeroComputer);
+    return numeroComputer;
+
+    
+
+}
+
+let somma = numeroUtente + numeroComputer;
+console.log(somma)
+
+
+
+
 
