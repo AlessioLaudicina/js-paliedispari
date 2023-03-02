@@ -13,6 +13,8 @@ console.log(parolaDivisa);
  let parolaInvertita = parolaDivisa.join('');
  console.log(parolaInvertita);
 
+ 
+
  function palindrome(parolaDivisa, parolaInvertita){
     if(parola == parolaInvertita){
         console.log('la parola è palindroma');
