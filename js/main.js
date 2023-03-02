@@ -12,8 +12,8 @@ console.log(sceltaUtente);
 const numeroUtente = parseInt (prompt('Inserisci un numero da 1 a 5'));
 console.log('Numero Utente: ' + numeroUtente)
 
-const numeroMin = 1;
-const numeroMax = 5;
+let numeroMin = 1;
+let numeroMax = 5;
 
 
 function numeroComputer(numeroMin, numeroMax){
