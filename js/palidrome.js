@@ -3,26 +3,31 @@
 - Creare una funzione per capire se la parola inserita è palindroma 
 */
 
-const parolaUtente = prompt('inserisci una parola');
-let parolaDivisa = parolaUtente.split('');
-console.log(parolaDivisa);
+const parola = prompt('Inserisci una parola');
+console.log(parola);
 
- parolaDivisa = parolaDivisa.reverse();
- console.log(parolaDivisa);
+const parolaInvertita = giraParola(parola);
+console.log(parolaInvertita);
 
- let parolaInvertita = parolaDivisa.join('');
- console.log(parolaInvertita);
 
- 
+if(parola == parolaInvertita){
+  alert('Palindroma');
+} else{
+  alert('Non è Palindroma');
+}
 
- function palindrome(parolaDivisa, parolaInvertita){
-    if(parola == parolaInvertita){
-        console.log('la parola è palindroma');
-      } else {
-        console.log('la parola non è palindroma');
-      }
-      return palindrome(parolaDivisa, parolaInvertita)
- }
+
+function giraParola(parolaDaGirare){
+
+  let parolaGirata = "";
+
+  for (let i = parolaDaGirare.length - 1; i >= 0; i--){
+    parolaGirata += parolaDaGirare[i];
+  }
+
+  return parolaGirata;
+}
+
 
 
 
